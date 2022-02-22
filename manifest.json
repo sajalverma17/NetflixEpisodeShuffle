@@ -1,0 +1,16 @@
+{
+    "name": "Netflix Shuffle",
+    "description": "Open up a random episode of a Netflix TV Show.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "icons": {
+        "16": "images/red-shuffle.png",
+        "48": "images/red-shuffle.png",
+       "128": "images/red-shuffle.png"
+    },
+    "action": {
+        "default_popup": "views/popup.html",
+        "default_title": "Shuffle this TV Show!"
+    }
+  }
