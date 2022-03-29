@@ -21,3 +21,13 @@ function randomCommandExecute() {
         episodes.item(getRandIntInRange(episodes.length)).click()
     }
 }
+
+function addButtonToTvShowPreview() {
+
+    const buttonsContainerClass = "buttonControls--container";
+    const buttonContainer = document.getElementsByClassName(buttonsContainerClass).item(0);
+    let btn = document.createElement("randomizeCommandButtonOnWebPage");
+    btn.innerHTML = "Shuffle";
+    btn.onclick = randomCommandExecute;
+    buttonContainer.appendChild(btn);
+}
