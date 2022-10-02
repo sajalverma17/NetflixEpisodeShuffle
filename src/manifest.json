@@ -1,5 +1,5 @@
 {
-    "name": "Netflix Shuffle",
+    "name": "Netflix Episode Shuffle",
     "description": "Play a random episode of a Netflix TV Show.",
     "version": "0.1",
     "manifest_version": 3,
