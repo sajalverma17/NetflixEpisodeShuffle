@@ -10,6 +10,7 @@ export function randomCommandExecute() {
     }
 }
 
+// Remark: Not in use as of now, adds button to "Episodes & info" view of the tv show
 function addButtonToTvShowPreview() {
 
     const buttonsContainerClass = "buttonControls--container";
