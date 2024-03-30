@@ -3,7 +3,7 @@
     "description": "Play a random episode of a Netflix TV Show.",
     "version": "1.0",
     "manifest_version": 3,
-    "permissions": ["activeTab", "scripting", "tabs"],
+    "permissions": ["activeTab", "scripting"],
     "host_permissions": ["https://*.netflix.com/*"],
     "web_accessible_resources": [
         {
