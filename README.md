@@ -1,7 +1,7 @@
 # Netflix Episode Shuffle: A Chrome Extension
 Add to your Chrome from the [Google Chrome Webstore](https://chrome.google.com/webstore/detail/netflix-episode-shuffle/lndeoibbeadhignkdegpiiaehliimpgf)
 
-![alttext](https://github.com/sajalverma17/NetflixEpisodeShuffle/assets/25904133/9ce7b70d-9194-4702-a558-e4c941f59d11)
+![alttext](https://github.com/sajalverma17/NetflixEpisodeShuffle/assets/25904133/9bc7001b-c27f-4072-8ccb-19f165212648)
 
 ## Motivation
 

@@ -1,7 +1,7 @@
 {
     "name": "Netflix Episode Shuffle",
     "description": "Play a random episode of a Netflix TV Show.",
-    "version": "0.1",
+    "version": "1.0",
     "manifest_version": 3,
     "permissions": ["activeTab", "scripting", "tabs"],
     "host_permissions": ["https://*.netflix.com/*"],

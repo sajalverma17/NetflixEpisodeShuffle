@@ -10,9 +10,9 @@ chrome.action.onClicked.addListener(function(tab) {
       
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
    if (changeInfo.url) {
-      console.log(changeInfo.url)
       if (changeInfo.url.includes("netflix.com/browse?jbv=") || changeInfo.url.includes("netflix.com/title/")) {
-         chrome.scripting.executeScript({
+         console.log("Adding randomize button to UI "+changeInfo.url);
+         chrome.scripting.executeScript({            
             target: { tabId: tabId },
             func: addRandomizeButton
          })
