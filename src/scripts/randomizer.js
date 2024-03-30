@@ -1,4 +1,4 @@
-export function randomCommandExecute() {
+export function randomize() {
 
     const episodeListItemClass = "titleCardList--container episode-item"
     const getRandIntInRange = max => Math.floor(Math.random() * Math.floor(max));
@@ -10,13 +10,15 @@ export function randomCommandExecute() {
     }
 }
 
-// Remark: Not in use as of now, adds button to "Episodes & info" view of the tv show
-function addButtonToTvShowPreview() {
+export function addRandomizeButton() {
+    const buttonContainer = document.getElementsByClassName("buttonControls--container").item(0);
 
-    const buttonsContainerClass = "buttonControls--container";
-    const buttonContainer = document.getElementsByClassName(buttonsContainerClass).item(0);
-    let btn = document.createElement("randomizeCommandButtonOnWebPage");
-    btn.innerHTML = "Shuffle";
-    btn.onclick = randomCommandExecute;
-    buttonContainer.appendChild(btn);
+    let img = document.createElement('img');
+    img.src = chrome.runtime.getURL("../images/red-shuffle.png");    
+    img.style.height = "34px";
+    img.style.width = "34px";
+    img.style.cursor = "pointer";       
+    img.onclick = () => randomize();
+
+    buttonContainer.appendChild(img);
 }

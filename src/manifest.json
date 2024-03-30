@@ -3,7 +3,14 @@
     "description": "Play a random episode of a Netflix TV Show.",
     "version": "0.1",
     "manifest_version": 3,
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "host_permissions": ["https://*.netflix.com/*"],
+    "web_accessible_resources": [
+        {
+            "resources": ["images/red-shuffle.png"],
+            "matches": ["https://*.netflix.com/*"]
+        }
+    ],
     "icons": {
         "16": "images/red-shuffle.png",
         "48": "images/red-shuffle.png",
@@ -21,4 +28,4 @@
         "service_worker": "background.js",
         "type": "module"
     }
-  }
+}
